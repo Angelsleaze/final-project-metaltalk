@@ -7,7 +7,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	background: url(../images/bg.jpg) no-repeat; 
-	background-color:#666666;
+	background-color: #666666;
 	color: #FFCC00;
 }
 
@@ -16,12 +16,16 @@ header {
 }
 
 .center {
-	width: 1150px;
+	width: 1200px;
 	height: 140px;
 }
 
 a {
 	color: #FFCC00;
+}
+
+a:hover {
+	color: #949494;
 }
 
 nav {
@@ -31,7 +35,17 @@ nav {
 
 nav a {
 	color: #FFCC00;
-	font-size: 20px; 
+	font-family: 'Cinzel';
+	font-weight: black;
+	font-size: 25px; 
+}
+
+/*h1, h2, h3, h4 {
+	font-family: 'Cinzel';
+}*/
+
+.banner-menu {
+	padding-top: 15px;
 }
 
 .media-list {
@@ -45,9 +59,11 @@ nav a {
 	width: 10px;
 }
 
+
 label {
 	color: #FFCC00;
 	font-size: 30px;
+	display: inline;
 }
 
 input[type="text"] {
@@ -63,10 +79,39 @@ input[type="text"] {
 	width: 700px;
 }
 
-footer {
-	background: black;
+@media screen and (max-width: 980px) {
+    .sidebar {
+        display: none;
+    }
 }
 
-footer nav li {
-	display: inline;
+@media screen and (max-width: 1024px) {
+	.orbit-container
+	.orbit-image {
+		width: 670px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.orbit-container
+	.orbit-image {
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.orbit-container
+	.orbit-image {
+		max-width: 300px;
+	}
+}
+
+.article {
+	border-top: solid 2px black;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+footer {
+	background: black;
 }
