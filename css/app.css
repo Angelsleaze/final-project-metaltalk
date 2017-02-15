@@ -12,7 +12,7 @@ body {
 }
 
 header {
-	display: inline-block;
+	background: #000;
 }
 
 .center {
@@ -29,8 +29,9 @@ a:hover {
 }
 
 nav {
-	background: black;
 	padding: 5px 0px 5px 0px;
+	width: 1200px;
+	display: inline-block;
 }
 
 nav a {
@@ -40,12 +41,55 @@ nav a {
 	font-size: 25px; 
 }
 
-/*h1, h2, h3, h4 {
+button {
+	color: #FFCC00;
+	font-size: 25px;
+	float: right;
+	padding: 10px;
+}
+
+@media screen and (min-width: 1090px) {
+	button {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1090px) {
+	nav {
+		display: none;
+	}
+}
+
+h1 {
 	font-family: 'Cinzel';
-}*/
+}
+
+h2 {
+	font-family: 'Cinzel';
+	font-size: 32px;
+}
+
+h3 {
+	font-family: 'Bitter';
+	font-size: 25px
+}
+
+.sidebar h3 {
+	font-size: 20px;
+	border-bottom: solid 2px #9E9797;
+}
+
+p {
+	font-family: 'Bitter';
+	color: #FFE063;
+}
+
+p:hover {
+	color: #F3F2F2;
+}
 
 .banner-menu {
-	padding-top: 15px;
+	padding-top: 20px;
 }
 
 .media-list {
@@ -59,16 +103,29 @@ nav a {
 	width: 10px;
 }
 
+.media-list:hover {
+    transform: scale(1.2);
+}
 
 label {
 	color: #FFCC00;
-	font-size: 30px;
-	display: inline;
+	font-size: 25px;
+	font-family: 'Cinzel';
+	padding: 15px;
 }
 
 input[type="text"] {
 	width: 200px;
 	height: 20px;
+	border-radius: 5px;
+}
+
+.radio {
+	padding: 10px;
+}
+
+.radio:hover {
+    transform: scale(1.2);
 }
 
 .orbit-container {
@@ -78,6 +135,12 @@ input[type="text"] {
 .orbit-image {
 	width: 700px;
 }
+
+.orbit p {
+	text-decoration: underline;
+	padding-top: 3px;
+}
+
 
 @media screen and (max-width: 980px) {
     .sidebar {
@@ -107,11 +170,16 @@ input[type="text"] {
 }
 
 .article {
-	border-top: solid 2px black;
+	border-top: solid 2px #9E9797;
 	margin-top: 20px;
 	padding-top: 20px;
 }
 
 footer {
-	background: black;
+	background: #000;
+}
+
+h4 {
+	font-family: 'Bitter';
+	text-align: center;
 }
