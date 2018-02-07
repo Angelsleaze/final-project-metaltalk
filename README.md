@@ -1,6 +1,6 @@
 #Intro
 
-![alt text](https://i.imgur.com/nvxfRkg.png)
+![alt text](https://i.imgur.com/rdRy5Tf.png)
 
 This is my first ever project completed while undertaking GA's 10-week Front End Development course.
 
